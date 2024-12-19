@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+#nav{
+    width:100%;
+    height:70px;
+    background-color: #6c6868;
+    display: flex;
+    align-items: center;
+    padding: 0 5vw;
+    justify-content: space-between;
+}
+#logo p{
+    font-size: 8vmin;
+    
+}
+#W{
+    font-size: 12vmin;
+}
+
+#links{
+    display: flex;
+    gap:3vw;
+}
+
+#links a{
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vmin;
+    border-bottom: 2px solid black;
+}
+#icon{
+    color:black;
+    display: none;
+}
+.contenet{
+    width: 100%;
+    height:calc(100% - 70px);
+    /* background-color: rgb(231, 15, 15); */
+    display:flex;
+}
+#quote{
+    width: 50%;
+    height:100%;
+    padding: 8vmin 6vw;  
+    /* background-color: aliceblue; */
+}
+#images{
+    width: 50%;
+    height:100%;
+    padding: 8vmin 6vw;  
+    position: relative;
+    /* background-color: aqua; */
+}
+#quote h2{
+    font-size: 5vmin;
+    font-weight: 600;
+    color:white;
+    margin-bottom: 5vh;
+}
+#quote h2 span{
+    font-size: 8vmin;
+    font-weight: 800;
+    color:#b59b9b;
+    display:block;
+}
+
+#quote h4{
+    font-size: 3vmin;
+    font-weight: 600;
+    color:white;
+}
+#quote h4 span{
+    font-size: 8vmin;
+    font-weight: 800;
+    color:#b59b9b;
+    display: block;
+}
+#quote h5{
+    font-size: 2vmin;
+    font-weight: 600;
+    color:white;
+}
+#quote h5 span{
+    font-size: 8vmin;
+    font-weight: 800;
+    color:#b59b9b;
+    display:block;
+    text-decoration: line-through;
+}
+#quote p{
+    color: white;
+    font-size: 2vmin;
+}
+#images img{
+    width: 100%;
+    height:100%
+}
+
+
+
+@media(max-width:550px){
+    #icon{
+        display: block;
+        font-weight:100;
+        font-size:4vmax;
+    }
+    #links a{
+        display:none;
+    }
+    .contenet{
+        display:block;
+    }
+    #quote{
+        width: 100%;
+        height:50%;
+    }
+    #quote h2{
+        font-size: 3vmin;
+        margin-bottom: 3vh;
+    }
+    #quote h2 span{
+        font-size: 7vmin;
+    }
+    
+    #quote h4{
+        font-size: 2vmin;
+    }
+    #quote h4 span{
+        font-size: 5vmin;
+    }
+    #quote h5{
+        font-size: 2vmin;
+    }
+    #quote h5 span{
+        font-size: 5vmin;
+    }
+    #quote p{
+        font-size: 2vmin;
+    }
+    #images{
+        width:100%;
+        height:50%;
+    }
+    #images img{
+        background-color: black;
+    }
+}
